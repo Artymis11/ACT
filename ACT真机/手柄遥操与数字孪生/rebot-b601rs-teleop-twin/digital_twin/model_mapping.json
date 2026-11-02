@@ -1,8 +1,0 @@
-{
-  "arm_signs": [1, 1, 1, 1, 1, 1],
-  "arm_offsets_rad": [0, 0, 0, 0, 0, 0],
-  "gripper_full_motor_rad": 4.71,
-  "finger_travel_m": 0.05,
-  "source": "Official RS URDF joint1..joint6 uses SDK native angles; axes are encoded by the URDF. Gripper visual conversion follows the existing local MotorBridge display: motor 0..4.71rad -> 0..0.05m per finger.",
-  "scope": "Display geometry only; no motor zero, firmware sign, control limit, ACT transform or physically measured aperture is changed. Actual installation-to-model alignment has not been physically verified."
-}
