@@ -1,0 +1,79 @@
+{
+  "schema": "tony-xbox-source-snapshot-v1",
+  "repository": "https://github.com/TonyWeyyy/reBot_B601_rs_xbox_teleop",
+  "commit": "f402f80ccab68d457178b5a8c688642147e069a4",
+  "scope": "Frozen raw GitHub commit bytes; only six AST-extracted input helpers are executed, never upstream hardware lifecycle.",
+  "source_file_count": 14,
+  "files": [
+    {
+      "path": "vendor/tony_xbox_teleop/config/rebotarm_rs.yaml",
+      "sha256": "7cbdada30a933c701b4bb3067cd5fb38b62c19b2c7bd172961f08f127ecd1570",
+      "bytes": 2063
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/gamepad_map.json",
+      "sha256": "2b3b85f7a25d90ecd97de6cda139adb303774cb80ed402453f6d2d8b31be35a1",
+      "bytes": 1358
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/install.sh",
+      "sha256": "072f7b1e4a16dee5db69681f797d72b114e26494ea28fe24411332ee9057e20e",
+      "bytes": 1411
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/README.md",
+      "sha256": "76c97abec1c722fa970d0fd2ba3e1af5ea5f8a413bd04bbb134968be013d0590",
+      "bytes": 5170
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/__init__.py",
+      "sha256": "1aa657c6f3615aef21ed94e6dd0804a561fced6e5f017eb5a420cc06ebab7321",
+      "bytes": 585
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/__pycache__/__init__.cpython-312.pyc",
+      "sha256": "d87288e4fc5c8e061019c9b10fd2d779337a2c8fea3ddfdac43384cb90f80010",
+      "bytes": 651
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/__pycache__/config.cpython-312.pyc",
+      "sha256": "836206c9011a838512e91107f198352bbf51c2b5a00db76c8c62d79f846838d9",
+      "bytes": 9529
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/__pycache__/controller.cpython-312.pyc",
+      "sha256": "573951a3d151e307fa9581d2a01f66f836ab0394fce49f7c8b44d8925142100d",
+      "bytes": 43805
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/config.py",
+      "sha256": "601a8a99024d061f2700a8897ea047ac22d89d2a9139b793860f157ee534268e",
+      "bytes": 9112
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/rebot/controller.py",
+      "sha256": "0d5087872eddb3ac8372ed0cb2d1aeb8dac580a47e372446e41c7913b340f845",
+      "bytes": 40876
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/requirements.txt",
+      "sha256": "e9f5a29c454872eb775c5d034ecaa85950ad21cc6633e90828129bd0b02d392b",
+      "bytes": 38
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/SDK_README_zh.md",
+      "sha256": "5d25b1186d489b9dd4026f930a26c8ff7c474c42431396eae2673cbcb10a8a13",
+      "bytes": 13401
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/setup_gamepad.py",
+      "sha256": "99f673324e9da799def2f766d55409795185b069b223f94d162fcbef972c8055",
+      "bytes": 6195
+    },
+    {
+      "path": "vendor/tony_xbox_teleop/xbox_teleop.py",
+      "sha256": "9d33cebed3598f396d325e255399602353e33a1d5f909b9e1d242c0a0736d5eb",
+      "bytes": 19939
+    }
+  ]
+}

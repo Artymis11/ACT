@@ -1,0 +1,3 @@
+# Python 3.12 x64 is recommended. Runtime code uses Python's standard library.
+# Windows XInput is provided by Windows; PCANBasic.dll/driver is installed separately.
+# No pygame, ROS2, MotorBridge SDK, npm build, or pip package is required for the default entry.

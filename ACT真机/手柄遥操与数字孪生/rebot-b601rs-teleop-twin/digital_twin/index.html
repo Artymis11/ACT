@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>B601-RS · 数字孪生</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/vendor/public/lib/three-r128.min.js"></script>
+  <script defer src="/vendor/public/lib/STLLoader-umd.js"></script>
+  <script defer src="/vendor/public/lib/URDFLoader.js"></script>
+  <script defer src="/vendor/public/lib/OrbitControls.js"></script>
+  <script defer src="/pose_state.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="identity"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M6 26h20M10 25v-6l8-5-6-7 6-3 8 10-8 7v4"/><circle cx="12" cy="7" r="3"/><circle cx="18" cy="15" r="3"/></svg><h1>B601-RS <span>数字孪生</span></h1></div>
+    <div class="live-badge" id="statusBadge" data-state="waiting"><span class="status-dot"></span><span id="statusText">等待遥操反馈</span></div>
+    <span class="read-only-label">实物姿态监看</span>
+  </header>
+  <main>
+    <section class="viewport" aria-label="三维机械臂视图">
+      <div class="scene-top"><div class="legend"><span><i class="actual-key"></i>实测姿态</span><span id="targetLegend"><i class="target-key"></i>控制目标</span></div><span id="sceneNote">加载官方 RS 模型</span></div>
+      <div id="scene" tabindex="0" aria-label="三维模型。鼠标左键旋转，滚轮缩放，右键平移。键盘方向键旋转，Shift加方向键平移，加减号缩放，Home适应视图。" aria-describedby="keyboardHelpText"></div>
+      <div class="model-load" id="modelLoad" role="status"><span id="modelLoadText">正在加载模型与本地网格…</span><progress id="loadProgress" max="100" value="0"></progress><button id="retryModel" hidden>重新加载</button></div>
+      <div class="scene-empty" id="sceneEmpty">参考零姿态<span>收到实测反馈后自动同步</span></div>
+      <div class="view-tools" aria-label="视图工具"><div class="view-presets"><button id="viewIso" class="selected">立体</button><button id="viewFront">正视</button><button id="viewSide">侧视</button><button id="viewTop">俯视</button></div><button id="fitView" title="将机械臂完整放入视图">适应视图</button></div>
+      <div class="scene-bottom"><span>拖动旋转 · 滚轮缩放 · 键盘见说明</span><span id="poseTime">尚无实测数据</span></div>
+      <div class="axis-note"><span class="axis-x">X</span> <span class="axis-y">Y</span> <span class="axis-z">Z</span><span>模型基座坐标</span></div>
+    </section>
+    <aside class="telemetry" aria-label="机械臂实时状态">
+      <div class="panel-title"><h2>关节状态</h2><span>原生角度 / °</span></div>
+      <table><thead><tr><th scope="col">关节</th><th scope="col">实测</th><th scope="col">控制目标</th></tr></thead><tbody id="jointRows"></tbody></table>
+      <div id="softLimit" class="notice" hidden></div>
+      <div id="errorBox" class="notice error" role="status" hidden></div>
+      <div class="display-options"><label><input type="checkbox" id="showTarget" checked>叠加目标姿态</label><label><input type="checkbox" id="showGrid" checked>地面网格</label><button id="freezeView" aria-pressed="false">暂停画面</button></div>
+      <p class="display-hint" id="displayHint">视图操作只影响显示，手柄遥操独立运行。</p>
+      <section class="run-state"><h2>运行状态</h2><dl><div><dt>控制阶段</dt><dd id="phase">等待数据</dd></div><div><dt>状态更新</dt><dd id="dataAge">—</dd></div><div><dt>手柄</dt><dd id="gamepad">—</dd></div><div><dt>速度档位</dt><dd id="speed">—</dd></div><div><dt>MIT 平均发送</dt><dd id="sendHz">—</dd></div><div><dt>最高电机温度</dt><dd id="temperature">—</dd></div></dl></section>
+      <details class="mapping-info"><summary>模型与操作说明</summary><p id="keyboardHelpText">点击或用 Tab 聚焦三维视图后：方向键旋转，Shift＋方向键平移，＋／－缩放，Home 适应视图。所有按键只改变观察视角。</p><p>模型来自 Seeed 官方文档收录的 RS Web 数字孪生项目。J1–J6 按原生 rad 更新 URDF；关节方向已包含在模型轴定义中。</p><p>J7 显示采用本机 MotorBridge 的换算：0–4.71 rad 对应每指 0–50 mm 模型位移，不代表实测夹爪开口宽度。模型与实物装配零位的一致性尚需实际画面对照。</p><a href="https://wiki.seeedstudio.com/rebot_arm_b601_rs_web_simulator_developer_guide/" target="_blank" rel="noreferrer">查看官方项目文档 ↗</a></details>
+    </aside>
+  </main>
+  <footer><div class="key-guide"><span><kbd>LB</kbd> 按住遥操</span><span><kbd>X</kbd> 使能 / 恢复</span><span><kbd>A</kbd> 长按3秒回起点失能</span><span><kbd>B</kbd> 回零失能</span><span><kbd>Y</kbd> 回本次起点</span></div><div class="session-line"><span id="sessionId">等待会话</span><span>反馈镜像 · 本地运行</span></div></footer>
+</body>
+</html>

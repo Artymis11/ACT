@@ -1,0 +1,40 @@
+{
+  "schema": "tony-beitong-xinput-map-v1",
+  "name": "Beitong Spartan 2 / Windows normalized XInput",
+  "adapter_space": "normalized_xinput_frame_v1",
+  "source_repository": "https://github.com/TonyWeyyy/reBot_B601_rs_xbox_teleop",
+  "source_commit": "f402f80ccab68d457178b5a8c688642147e069a4",
+  "scope": "Input intent mapping only. These signs are button choices, not ACT mappings, motor direction settings, physical limits, or motion authorization.",
+  "axis_order": ["LX", "LY", "RX", "RY", "LT", "RT"],
+  "button_order": ["A", "B", "X", "Y", "LB", "RB", "Back", "Start", "LeftStick", "RightStick", "DPadUp", "DPadDown", "DPadLeft", "DPadRight"],
+  "native_input_signs": [1, 1, 1, 1, 1, 1, 1],
+  "j3_input_scope": "RY positive means increasing native J3 intent. Negative intent remains negative for the session planner to accept or reject; +0.093 rad is never used here.",
+  "deadzone": 0.12,
+  "use_cubic_curve": true,
+  "operator_bindings": {
+    "X": "enable a new session or resume current control",
+    "A_hold_seconds": 3.0,
+    "A": "return to immutable session origin then disable",
+    "B": "GitHub smooth all-axis zero then disable",
+    "Y": "return to immutable session origin without disable",
+    "Esc_CtrlC": "GitHub smooth all-axis zero then disable",
+    "inactivity_timeout_seconds": 120.0
+  },
+  "controls": {
+    "lb": {"type": "button", "index": 4},
+    "rb": {"type": "button", "index": 5},
+    "pause": {"type": "button", "index": 1},
+    "resume": {"type": "button", "index": 2},
+    "return_origin": {"type": "button", "index": 3},
+    "lx": {"type": "axis", "index": 0, "value": 1.0, "rest": 0.0},
+    "ly": {"type": "axis", "index": 1, "value": 1.0, "rest": 0.0},
+    "rx": {"type": "axis", "index": 2, "value": 1.0, "rest": 0.0},
+    "ry": {"type": "axis", "index": 3, "value": 1.0, "rest": 0.0},
+    "lt": {"type": "axis", "index": 4, "value": 1.0, "rest": 0.0},
+    "rt": {"type": "axis", "index": 5, "value": 1.0, "rest": 0.0},
+    "up": {"type": "button", "index": 10},
+    "down": {"type": "button", "index": 11},
+    "left": {"type": "button", "index": 12},
+    "right": {"type": "button", "index": 13}
+  }
+}

@@ -4,6 +4,7 @@
 !/.gitattributes
 !/README.md
 !/AUTHORS.md
+!/.github/
 !/ACT仿真/
 !/ACT真机/
 

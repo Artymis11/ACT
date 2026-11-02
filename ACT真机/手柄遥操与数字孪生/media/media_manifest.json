@@ -1,0 +1,59 @@
+{
+  "author": "artymis",
+  "source_sha256": "6c1f4f9eb0ba1a4973e224fce6ade1e56f9517c8f407bde4de4c9afc686ebcb5",
+  "output_sha256": "063fe4dd77feca506b8774dacdfad1a31dfb56c095e10cc5a75cafc12b9415d5",
+  "source_seconds": 44.1,
+  "output_seconds": 44.1,
+  "source_frames": 1323,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio": "removed per user request",
+  "speed": 1.0,
+  "cuts": [],
+  "crop": null,
+  "source_view_on_canvas": {
+    "x": 40,
+    "y": 164,
+    "width": 1408,
+    "height": 792
+  },
+  "captions_cover_source_view": false,
+  "caption_timing": [
+    [
+      0,
+      8,
+      "手柄输入 → 七轴目标 → 实体机械臂"
+    ],
+    [
+      8,
+      17,
+      "按住 LB 点动；松开后停止点动，继续保持使能"
+    ],
+    [
+      17,
+      26,
+      "摇杆控制 J1—J4；方向键控制 J5 / J6"
+    ],
+    [
+      26,
+      35,
+      "浏览器读取实际关节反馈，更新三维姿态"
+    ],
+    [
+      35,
+      44.1,
+      "A 回本次起点后失能；B 回零后失能"
+    ]
+  ],
+  "content": "Human gamepad teleoperation; 3D viewer driven by measured robot feedback",
+  "video_file": "B601RS_gamepad_digital_twin_demo.mp4",
+  "poster_file": "demo_poster.jpg",
+  "edits": [
+    "Remove original audio",
+    "Add separate key guide and explanatory text outside source view",
+    "Add artymis attribution"
+  ]
+}
