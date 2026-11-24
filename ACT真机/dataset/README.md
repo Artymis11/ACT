@@ -8,7 +8,7 @@ ACT4 示教为 **60 集、32,283 帧**，其中 54 集 29,094 帧训练，6 集 
 
 ## 从 SenseCraft 导出重建
 
-在版本目录执行下列命令。`local/raw-act4` 指向原始 LeRobot 导出，`local/recording` 指向同一次 SenseCraft 录制的元数据目录，内有 `state.json` 和录制日志。运行时依赖见[训练环境](../training/)。
+在 `ACT真机` 目录执行下列命令。`local/raw-act4` 指向原始 LeRobot 导出，`local/recording` 指向同一次 SenseCraft 录制的元数据目录，内有 `state.json` 和录制日志。运行时依赖见[训练环境](../training/)。
 
 ```bash
 python autodl/runs/act4_224_scratch_20261109/prepare_act4_data.py \

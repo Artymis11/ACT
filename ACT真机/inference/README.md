@@ -10,7 +10,7 @@
 
 ## 云端服务与 SSH
 
-安装[固定云端环境](../training/)，在版本目录执行：
+安装[固定云端环境](../training/)，在 `ACT真机` 目录执行：
 
 ```bash
 python autodl/prepare_serving_model.py \

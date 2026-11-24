@@ -8,7 +8,7 @@ AutoDL 的实测训练环境为 Linux、单卡 CUDA、LeRobot 0.6.1、PyTorch 2.
 
 1. 按[数据处理](../dataset/)生成原标签和三帧均值标签版本。
 2. 通过 [prepare_video_cache.py](../autodl/prepare_video_cache.py) 准备双摄解码缓存。`--dataset-root` 指向平滑数据集，`--output-dir` 存放缓存。设置 `ACT_VIDEO_CACHE_MANIFEST` 为生成的 `manifest.json`。
-3. 将 [train_config.example.json](train_config.example.json) 的数据和输出目录换成本机路径，预缓存 TorchVision 的 ImageNet 骨干。在版本目录运行：
+3. 将 [train_config.example.json](train_config.example.json) 的数据和输出目录换成本机路径，预缓存 TorchVision 的 ImageNet 骨干。在 `ACT真机` 目录运行：
 
 ```bash
 python autodl/runs/act4_224_scratch_20261109/train_act4_scratch.py \
