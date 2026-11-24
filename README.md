@@ -1,16 +1,19 @@
-# ACT 仿真与真机分阶段复现
+# ACT
 
-作者：**请输入名字QaQ** · [1595530254a-afk](https://github.com/1595530254a-afk)
+红色方块抓放的两阶段复现，从 MuJoCo 多位置仿真到 B601-RS 双摄真机。项目记录了数据、训练、部署和调试过程。
 
-本仓库包含仿真复现与真机实验。真机首版采用 2026 年 11 月 20 日封存的 ACT4 低学习率 8,000 步策略。
+| [MuJoCo 仿真](ACT仿真/) | [B601-RS 真机](ACT真机/) |
+| --- | --- |
+| [![MuJoCo 仿真的八个预留位置同步回放](ACT仿真/docs/stage1_20261024/simulation-preview.jpg)](ACT仿真/results/stage1_20261024/videos/v04_final8_overview.mp4) | [![B601-RS 真机放入红块时的双摄与七轴轨迹](ACT真机/ACT4-8000-20261120/evaluation/media/real-robot-preview.jpg)](ACT真机/ACT4-8000-20261120/evaluation/media/act4-trial01-grasp.mp4) |
+| **3,000 步 · 预留位置 8/8**<br>固定场景下的局部 XY 验证。 | **8,000 步 · 11 月 20 日封存**<br>封存四轮，第 1 轮双摄确认入盒。 |
 
-| 阶段 | 入口 | 当前内容 |
+## 按目标阅读
+
+| 想查什么 | 仿真 | 真机 |
 | --- | --- | --- |
-| 第一阶段 | [ACT仿真](ACT仿真/) | 仿真源码、训练教学复盘、调参记录、验证结果、署名视频 |
-| 第二阶段 | [ACT真机](ACT真机/) | 主从臂示教、数据处理、训练、云端推理、双摄回放与优化复盘 |
+| 实验怎样做 | [训练复现](ACT仿真/docs/stage1_20261024/训练复现步骤.md) | [七个模块与推理链路](ACT真机/ACT4-8000-20261120/) |
+| 数据和模型在哪 | [训练记录](ACT仿真/results/stage1_20261024/training_record.json) | [双摄示教样例](ACT真机/ACT4-8000-20261120/dataset/example/) · [8,000 步模型](https://github.com/Artymis11/ACT/releases/tag/act4-8000-20261120) |
+| 结果如何核对 | [位置验证](ACT仿真/docs/stage1_20261024/runtime_inputs/compact_results.json) | [真机评测与回放](ACT真机/ACT4-8000-20261120/evaluation/) |
+| 为什么这样优化 | [训练与调参复盘](ACT仿真/docs/stage1_20261024/ACT仿真训练复现与调参复盘.md) · [PDF](ACT仿真/reports/ACT仿真训练复现与调参复盘.pdf) | [优化历程与方法](ACT真机/ACT4-8000-20261120/docs/) |
 
-先读[PDF教学复盘](ACT仿真/reports/ACT仿真训练复现与调参复盘.pdf)或[在线文字版](ACT仿真/docs/stage1_20261024/ACT仿真训练复现与调参复盘.md)，再按[复现步骤](ACT仿真/docs/stage1_20261024/训练复现步骤.md)准备数据并训练。
-
-当前仿真选定step3000＋ensemble1：四验证位置4/4，事先保留八点8/8，随后追加一点1/1。结果限于固定场景的局部位置变化。
-
-[作者与上游来源](AUTHORS.md)。本次整理替换当前版本入口，没有改写Git历史；旧提交中的早期部署原型不属于本版发布内容。
+作者 **请输入名字QaQ**。 [作者与上游来源](AUTHORS.md)

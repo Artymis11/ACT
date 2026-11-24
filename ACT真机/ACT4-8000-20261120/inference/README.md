@@ -2,6 +2,8 @@
 
 ## 模型与输入输出
 
+[下载 8,000 步推理包（183 MiB）](https://github.com/Artymis11/ACT/releases/download/act4-8000-20261120/act4-low8000-pretrained-model.zip)
+
 [模型清单](model-manifest.json)固定封存推理包的 11 个文件、长度及 SHA-256，包含原始配置、权重、预处理与后处理。解包后保留 `pretrained_model/` 结构。核验命令为 `python inference/verify_model.py local/model/pretrained_model`。
 
 输入为按双线性插值等比缩放、补边的 RGB224 和当前七轴状态。每个 ACT 预测输出 100 步，RPC 取前 50 步并通过保存的处理器反归一化。本机的策略时基为 30 Hz，派发为 60 Hz。J1–J6 使用限速插值和时间集成，J7 沿用原执行链。
