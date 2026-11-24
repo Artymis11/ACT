@@ -1,0 +1,110 @@
+{
+  "source_archive_sha256_files_verified": 208,
+  "frozen_source_files_unchanged": 18,
+  "frozen_source_files_with_portable_startup_changes": 3,
+  "offline_runtime_unittests_passed": 133,
+  "data_verification": {
+    "status": "passed",
+    "checks": {
+      "metadata_geometry_and_contract": true,
+      "schema_and_non_action_columns": true,
+      "independent_episode_bounded_mean_all_labels": true,
+      "episode_metadata_only_action_statistics_changed": true,
+      "train_stats_exact_episode_aggregate54": true,
+      "train_action_count_and_direct_mean_std": true,
+      "separate_split_is_complete_and_disjoint": true,
+      "image_source_payload_hashes_unchanged": true,
+      "video_bytes_inherited": true,
+      "official_dataset54_6_frame_counts": true,
+      "official_train_statistics": true,
+      "validation_explicitly_uses_train_statistics": true,
+      "official_decoding_and_action100_padding": true
+    },
+    "probes": [
+      {
+        "split": "train",
+        "selected_index": 0,
+        "global_index": 491,
+        "episode_index": 1,
+        "valid": true
+      },
+      {
+        "split": "train",
+        "selected_index": 14547,
+        "global_index": 16131,
+        "episode_index": 29,
+        "valid": true
+      },
+      {
+        "split": "train",
+        "selected_index": 29093,
+        "global_index": 32282,
+        "episode_index": 59,
+        "valid": true
+      },
+      {
+        "split": "validation",
+        "selected_index": 0,
+        "global_index": 0,
+        "episode_index": 0,
+        "valid": true
+      },
+      {
+        "split": "validation",
+        "selected_index": 1594,
+        "global_index": 18461,
+        "episode_index": 34,
+        "valid": true
+      },
+      {
+        "split": "validation",
+        "selected_index": 3188,
+        "global_index": 31789,
+        "episode_index": 58,
+        "valid": true
+      }
+    ],
+    "train_frames": 29094,
+    "eval_frames": 3189,
+    "normalization": "Training split statistics explicitly assigned to validation.",
+    "model_loads": 0,
+    "optimizer_steps": 0,
+    "hardware_connections": 0
+  },
+  "cpu_rpc_replay": {
+    "device": "cpu",
+    "input_rgb_exact": true,
+    "shape": [
+      50,
+      7
+    ],
+    "exact_equal": false,
+    "within_absolute_tolerance": true,
+    "absolute_tolerance": 0.002,
+    "maximum_absolute_difference": 0.0015174150466918945,
+    "mean_absolute_difference": 0.00048776285988943915,
+    "maximum_absolute_difference_per_channel": [
+      0.0005278587341308594,
+      0.0011444091796875,
+      0.000934600830078125,
+      0.0003566741943359375,
+      0.0009455680847167969,
+      0.0015174150466918945,
+      0.0001049041748046875
+    ],
+    "differing_elements_exact": 347,
+    "elements_exceeding_tolerance": 0,
+    "maximum_difference_location": {
+      "action_offset": 44,
+      "channel": 5
+    }
+  },
+  "sensecraft_native_preflight": {
+    "status": "check_only_passed",
+    "data_scope": "isolated copy of the recording and original calibration metadata",
+    "checkpoint_step": 8000,
+    "saved_zero_verified": true,
+    "dispatch_hz": 60,
+    "hardware_connected": false
+  }
+}

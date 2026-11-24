@@ -1,0 +1,142 @@
+{
+  "codebase_version": "v3.0",
+  "robot_type": "seeed_b601_rs_follower",
+  "total_episodes": 60,
+  "total_frames": 32283,
+  "fps": 30,
+  "features": {
+    "action": {
+      "dtype": "float32",
+      "names": [
+        "shoulder_pan.pos",
+        "shoulder_lift.pos",
+        "elbow_flex.pos",
+        "wrist_flex.pos",
+        "wrist_yaw.pos",
+        "wrist_roll.pos",
+        "gripper.pos"
+      ],
+      "shape": [
+        7
+      ]
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "names": [
+        "shoulder_pan.pos",
+        "shoulder_lift.pos",
+        "elbow_flex.pos",
+        "wrist_flex.pos",
+        "wrist_yaw.pos",
+        "wrist_roll.pos",
+        "gripper.pos"
+      ],
+      "shape": [
+        7
+      ]
+    },
+    "observation.images.front": {
+      "dtype": "video",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "is_depth_map": false,
+        "video.height": 224,
+        "video.width": 224,
+        "video.codec": "h264",
+        "video.pix_fmt": "gbrp",
+        "video.fps": 30,
+        "video.channels": 3,
+        "has_audio": false,
+        "video.g": 2,
+        "video.crf": 0,
+        "video.preset": "fast",
+        "video.fast_decode": 0,
+        "video.video_backend": "pyav",
+        "video.extra_options": {
+          "qp": "0",
+          "bf": "0"
+        },
+        "video.encoder": "libx264rgb",
+        "video.lossless_rgb": true
+      }
+    },
+    "observation.images.gripper": {
+      "dtype": "video",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "is_depth_map": false,
+        "video.height": 224,
+        "video.width": 224,
+        "video.codec": "h264",
+        "video.pix_fmt": "gbrp",
+        "video.fps": 30,
+        "video.channels": 3,
+        "has_audio": false,
+        "video.g": 2,
+        "video.crf": 0,
+        "video.preset": "fast",
+        "video.fast_decode": 0,
+        "video.video_backend": "pyav",
+        "video.extra_options": {
+          "qp": "0",
+          "bf": "0"
+        },
+        "video.encoder": "libx264rgb",
+        "video.lossless_rgb": true
+      }
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  }
+}

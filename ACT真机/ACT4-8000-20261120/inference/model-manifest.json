@@ -1,0 +1,56 @@
+{
+  "checkpoint_step": 8000,
+  "layout": "pretrained_model/",
+  "source_weights_sha256": "763d3fa46c33888b1ebbcc865fa2840cedd9a07233c769a1a3b28ed85e1c0dd2",
+  "asset": {
+    "name": "act4-low8000-pretrained-model.zip",
+    "bytes": 191874662,
+    "sha256": "241ed7b64531be98a0a27580a3d36860992ae2de101972bc62ae22f6b76680fd"
+  },
+  "files": {
+    "config.json": {
+      "sha256": "9130b86d19e8e680f674c37caa05c48e64de3f80f45b862e49be045c77570265",
+      "bytes": 1802
+    },
+    "image_preprocessing.json": {
+      "sha256": "4b0f4c49375cee59fc169f7cbe6eba5e9fe2e4ecf70eb0a0405eab5ff0d56867",
+      "bytes": 469
+    },
+    "lr_branch.json": {
+      "sha256": "4bf348b98f3eadbece5e0686947bb90871c534f5335cd2f5fd9311e730035bf0",
+      "bytes": 6382
+    },
+    "model.safetensors": {
+      "sha256": "763d3fa46c33888b1ebbcc865fa2840cedd9a07233c769a1a3b28ed85e1c0dd2",
+      "bytes": 206707932
+    },
+    "policy_postprocessor.json": {
+      "sha256": "c27cf6f42b42352f9b8f9c40da155fd4459e0ee9b85b9f23072941eb52b3ffb5",
+      "bytes": 660
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "sha256": "d9717e33b3ab1b84ca6a0272c51095d1dfe9998977b3b9952674a82f8a439a05",
+      "bytes": 7648
+    },
+    "policy_preprocessor.json": {
+      "sha256": "9d174a9b598a044950842ffd9dfbf08d4c623978bc4b8c2d5a69151429dbd49b",
+      "bytes": 1330
+    },
+    "policy_preprocessor_step_3_normalizer_processor.safetensors": {
+      "sha256": "8b7d5b8be09decfbb7865ac241f8d8b638c07daca964160f2c6c640bdddb89cf",
+      "bytes": 7592
+    },
+    "random_initialization.json": {
+      "sha256": "a2ae61eacac2c4cd2f63186dd989874457159f664d904fc1dbb3d709f64c300e",
+      "bytes": 1181
+    },
+    "train_config.json": {
+      "sha256": "1715fb30ab7163e362f3e048d1062539e58af919aa1e6cb11de53b7a200d7f03",
+      "bytes": 6398
+    },
+    "training_regularization.json": {
+      "sha256": "7fb6acc6aa860ecda055b345062bb7f85e6e364deb45355f9bcb20e525c1ba7c",
+      "bytes": 580
+    }
+  }
+}

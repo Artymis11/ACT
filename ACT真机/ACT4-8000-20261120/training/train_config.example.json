@@ -1,0 +1,81 @@
+{
+  "dataset": {
+    "repo_id": "local/act4_224_action_smoothed_v1",
+    "root": "local/data/act4_224_action_smoothed_v1",
+    "video_backend": "pyav",
+    "use_imagenet_stats": true,
+    "eval_split": 0.1,
+    "image_transforms": {
+      "enable": false
+    }
+  },
+  "policy": {
+    "type": "act",
+    "device": "cuda",
+    "use_amp": false,
+    "push_to_hub": false,
+    "pretrained_path": null,
+    "pretrained_backbone_weights": "ResNet18_Weights.IMAGENET1K_V1",
+    "vision_backbone": "resnet18",
+    "n_obs_steps": 1,
+    "chunk_size": 100,
+    "n_action_steps": 100,
+    "use_vae": true,
+    "kl_weight": 10.0,
+    "input_features": {
+      "observation.state": {
+        "type": "STATE",
+        "shape": [
+          7
+        ]
+      },
+      "observation.images.front": {
+        "type": "VISUAL",
+        "shape": [
+          3,
+          224,
+          224
+        ]
+      },
+      "observation.images.gripper": {
+        "type": "VISUAL",
+        "shape": [
+          3,
+          224,
+          224
+        ]
+      }
+    },
+    "output_features": {
+      "action": {
+        "type": "ACTION",
+        "shape": [
+          7
+        ]
+      }
+    },
+    "optimizer_lr": 0.0001,
+    "optimizer_lr_backbone": 1e-05,
+    "optimizer_weight_decay": 0.0001
+  },
+  "output_dir": "local/training/act4_224_scratch",
+  "job_name": "act4_224_scratch",
+  "resume": false,
+  "seed": 42,
+  "num_workers": 8,
+  "batch_size": 32,
+  "steps": 50000,
+  "prefetch_factor": 2,
+  "persistent_workers": true,
+  "dataloader_multiprocessing_context": "spawn",
+  "save_checkpoint": true,
+  "save_freq": 2500,
+  "log_freq": 50,
+  "eval_steps": 2500,
+  "max_eval_samples": 0,
+  "env_eval_freq": 0,
+  "save_checkpoint_to_hub": false,
+  "wandb": {
+    "enable": false
+  }
+}

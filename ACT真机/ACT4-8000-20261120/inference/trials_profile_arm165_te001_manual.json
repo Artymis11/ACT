@@ -1,0 +1,21 @@
+{
+  "schema": "act-inference-trials-v1",
+  "enabled": true,
+  "operator_controlled": true,
+  "manual_advance": true,
+  "max_trials": null,
+  "trial_seconds": null,
+  "rest_seconds": 0,
+  "tolerance_deg": 2.0,
+  "return_timeout_seconds": 45.0,
+  "return_speed_deg_s": 25.0,
+  "zero_state_path": "../local/zero_state.json",
+  "capture_request_path": "../local/zero_state_capture_request.json",
+  "require_cloud_episode_guard": true,
+  "operator_saved_pose": true,
+  "action_processing": {
+    "arm_transition_rate_deg_s": 165,
+    "temporal_ensemble_coeff": 0.01,
+    "temporal_ensemble_scope": "arm6"
+  }
+}

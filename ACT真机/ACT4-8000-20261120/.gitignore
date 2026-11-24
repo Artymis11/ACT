@@ -1,0 +1,8 @@
+/local/
+/autodl/runs/act4_224_scratch_20261109/*
+!/autodl/runs/act4_224_scratch_20261109/*.py
+!/autodl/runs/act4_224_scratch_20261109/environment.cloud.lock.txt
+!/autodl/runs/act4_224_scratch_20261109/split_manifest.json
+*.safetensors
+*.pem
+*.key

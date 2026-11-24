@@ -1,0 +1,14 @@
+{
+  "schema": "act4-transport-ab-summary-v1",
+  "same_model": "ACT4 low-learning-rate 8000, A800",
+  "same_transport": "lossless bidirectional SSH compression",
+  "baseline": "Resize to RGB224 on client before upload",
+  "variant": "Send RGB640x480 and resize to RGB224 on server",
+  "pairs": 24,
+  "timing_scope": "observation send to client-side usable actions",
+  "raw_upload_paired_median_extra_ms": 108.8,
+  "model_input_rgb_hashes_all_equal": true,
+  "action_values_per_pair": 350,
+  "actions_all_bitwise_equal": true,
+  "maximum_action_abs_difference": 0.0
+}

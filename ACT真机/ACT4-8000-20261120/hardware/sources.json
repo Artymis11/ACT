@@ -1,0 +1,17 @@
+{
+  "follower": {
+    "package": "lerobot-robot-seeed-b601==1.0.5",
+    "source": "https://github.com/Seeed-Projects/lerobot-robot-seeed-b601/tree/0da1a1a5575905d77823227003ffee7672059780",
+    "wheel_sha256": "b318b90eaf66e3c1ef7a82b04b98f12608ebd1e98532fc80df7e50e3f4e9bd0e"
+  },
+  "leader": {
+    "package": "lerobot-teleoperator-rebot-arm-102==1.0.1",
+    "source": "https://github.com/Seeed-Projects/lerobot-teleoperator-rebot-arm-102/tree/8514914a645f6f5cb23e941d12ceaf85bc6e5c79",
+    "wheel_sha256": "88135ac909d575633873801b98075483f10f04d679cd198c59b1b127434fa185"
+  },
+  "smart_servo_sdk": {
+    "package": "motorbridge-smart-servo==0.0.4",
+    "source": "https://pypi.org/project/motorbridge-smart-servo/0.0.4/",
+    "windows_abi3_wheel_sha256": "ea3baa9ba25bcec5541f3d86d73a3406ba2fcffe5dbf900c22e058638fc31ab0"
+  }
+}

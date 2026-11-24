@@ -1,0 +1,25 @@
+{
+  "schema": "act4-public-session-summary-v1",
+  "local_time_asia_shanghai": "2026-11-20 15:52–15:54",
+  "source_archive_verified_files": 208,
+  "checkpoint_step": 8000,
+  "weights_sha256": "763d3fa46c33888b1ebbcc865fa2840cedd9a07233c769a1a3b28ed85e1c0dd2",
+  "local_dispatch_hz": 60,
+  "cloud_actions_per_chunk": 50,
+  "trial_count": 4,
+  "telemetry": {
+    "observations": 201,
+    "dispatched_targets": 2964,
+    "received_cloud_chunks": 93
+  },
+  "final_release_confirmed": true,
+  "video_evidence": {
+    "trial": 1,
+    "outcome": "双摄可见红块夹起并留在盒内",
+    "source_interval_seconds": [
+      4.0,
+      16.06
+    ]
+  },
+  "result_scope": "The archived trial result fields were unknown; only trial 1 is labeled successful here by dual-camera review."
+}

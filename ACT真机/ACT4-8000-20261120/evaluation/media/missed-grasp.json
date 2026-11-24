@@ -1,0 +1,12 @@
+{
+  "recorded_time_asia_shanghai": "2026-11-19 23:15",
+  "profile": "original low8000 arm165, temporal ensemble disabled",
+  "view": "wrist",
+  "source_interval_s": [
+    11.5,
+    18.0
+  ],
+  "decoded_frames": 195,
+  "fps": 30,
+  "sha256": "44fe42a059619c4fbee5e4a9dcbfd240a53f1babd29b35a96a9ad2555c77a319"
+}

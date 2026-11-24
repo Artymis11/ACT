@@ -1,0 +1,10 @@
+{
+  "leader": { "type": "rebot_arm_102_leader", "serial_port": "COM_PLACEHOLDER" },
+  "follower": { "type": "seeed_b601_rs_follower", "can_port": "can0" },
+  "cameras": {
+    "front": { "model": "D435i", "source": "intelrealsense://FRONT_SERIAL" },
+    "gripper": { "model": "D405", "source": "intelrealsense://WRIST_SERIAL" }
+  },
+  "rgb_capture": { "width": 640, "height": 480, "fps": 30 },
+  "local_dataset_root": "local/raw-act4"
+}

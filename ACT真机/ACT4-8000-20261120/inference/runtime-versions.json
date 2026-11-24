@@ -1,0 +1,6 @@
+{
+  "lerobot": "0.6.0",
+  "lerobot_robot_seeed_b601": "1.0.3",
+  "motorbridge": "0.5.1",
+  "pillow": "12.3.0"
+}

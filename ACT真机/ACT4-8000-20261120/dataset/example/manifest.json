@@ -1,0 +1,15 @@
+{
+  "episode_index": 0,
+  "frames": 491,
+  "camera_fps": 30,
+  "cameras": [
+    "front",
+    "gripper"
+  ],
+  "video_encoding": "H.264 preview of RGB224 input; lossless first-frame arrays in evaluation/rpc_fixture",
+  "assets_sha256": {
+    "state_action.csv": "71b307f7d0ed624a27637ac06d6c70322d1b2337f2d160925d85447979240f5f",
+    "front.mp4": "8a4686d5c37e6d7b03f2d78deceed224bc5ea6288df47a947f81dcdd70a6a5e0",
+    "gripper.mp4": "3b08753d803bb5b2e38a9a992a8c2bf1861538785a5e8e5434128e41a486dfde"
+  }
+}

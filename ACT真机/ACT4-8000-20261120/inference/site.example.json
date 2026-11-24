@@ -1,0 +1,11 @@
+{
+  "runtime_root": "C:/path/to/SenseCraft/runtime",
+  "backend_root": "C:/path/to/SenseCraft/backend/expanded",
+  "data_root": "C:/path/to/SenseCraft/data",
+  "pillow_root": "",
+  "project_id": "your-active-sensecraft-project",
+  "recording_id": "your-original-act4-recording",
+  "model_dir": "model/pretrained_model",
+  "server_address": "127.0.0.1:8165",
+  "serving_path": "/absolute/cloud/path/printed/by/prepare_serving_model"
+}

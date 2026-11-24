@@ -1,0 +1,19 @@
+{
+  "asset": {
+    "name": "act4-trial01-grasp.mp4",
+    "bytes": 6240548,
+    "sha256": "27e53e99e7848e1631f838e396f0decfe140f17309c553f74329c8079564179c"
+  },
+  "visual_outcome": "双摄可见红块夹起并留在盒内",
+  "source_interval_seconds": [
+    4.0,
+    16.06
+  ],
+  "size": [
+    1440,
+    1232
+  ],
+  "output_fps": 30,
+  "decoded_frames": 362,
+  "pts_verified": true
+}
